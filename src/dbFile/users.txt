@@ -8,5 +8,15 @@
 		"telefono": "+5411111111",
 		"foto": "1641260054982_1640950852582_avatar.png",
 		"id": "678a6da5-b4ec-416d-9af7-67f7673b2261"
+	},
+	{
+		"email": "sol_mac@hotmail.com",
+		"password": "$2b$10$WcJkBGgVFQpVWBQhIraF8OMvHsEyepBEwuH1bJ1dV5OmUUe/8wy4W",
+		"nombre": "sol",
+		"direccion": "TEODORO GARCIA 3333",
+		"edad": "41",
+		"telefono": "01140456933",
+		"foto": "1641682792058_avatarH.png",
+		"id": "42922f1c-303e-44f7-b2de-7bc7f4a363e9"
 	}
 ]

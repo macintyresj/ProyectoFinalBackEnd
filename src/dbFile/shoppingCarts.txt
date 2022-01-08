@@ -46,5 +46,37 @@
 		},
 		"cantidad": 1,
 		"client_id": "61d1b9f1bf35572c282262da"
+	},
+	{
+		"id": "8cb1c98f-df3a-481c-b0bd-32b4462d70a1",
+		"timestamp": "8/1/2022 20:02:36",
+		"producto": {
+			"id": "b83ea4c2-0726-4afb-a9e4-d137a90aa511",
+			"timestamp": "3/1/2022 22:50:25",
+			"nombre": "BILL",
+			"descripcion": "Funko Pop - Figura vinilo. Series/Gravity Falls",
+			"codigo": "1088",
+			"foto": "https://app.pardux.com/render/img-jpeg/58/aliennex-ecuador/bill-ciphe-61b2602f82887",
+			"precio": "3980",
+			"stock": "2"
+		},
+		"cantidad": 1,
+		"client_id": "42922f1c-303e-44f7-b2de-7bc7f4a363e9"
+	},
+	{
+		"id": "321be1e5-a595-45b9-b69a-9a21a970e69d",
+		"timestamp": "8/1/2022 20:02:38",
+		"producto": {
+			"id": "f8b2ce37-ade7-4ba1-bfc3-4e5646c334cf",
+			"timestamp": "8/1/2022 20:02:25",
+			"nombre": "THE CHILD",
+			"descripcion": "Funko Pop - Figura Vinilo. Series/Mandalorian",
+			"codigo": "0123",
+			"foto": "https://app.pardux.com/render/img-jpg/58/aliennex-ecuador/funko-pop-the-child-with-cup-baby-yoda-378-star-wars-the-mandalorian",
+			"precio": "4490",
+			"stock": "1"
+		},
+		"cantidad": 1,
+		"client_id": "42922f1c-303e-44f7-b2de-7bc7f4a363e9"
 	}
 ]

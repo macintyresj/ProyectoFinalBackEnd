@@ -30,7 +30,7 @@ const renderProducts = (data) => {
             </div>`).join('');
         HTMLProducts.innerHTML = template;
     } else {
-        const template = ("Ouch!", data.error, "error"); 
+        const template = swal("Ouch!", data.error, "error"); 
         HTMLProducts.innerHTML = template;
     }
 
@@ -87,14 +87,14 @@ formAddProduct.onsubmit = async (e) => {
         const data = await response.json();
 
         if (Object.keys(data)[0] == 'error') {
-            ("ocurrió un error", result.error, "error");
+            swal("ocurrió un error", result.error, "error");
 
       
         } else if (Object.keys(data)[0] == 'errors') {
             let errorsTemplate = data.errors.map(e => {
                 return `  ${e.value} --> ${e.msg}  `
             }).join('||');
-            ("Error🤖", errorsTemplate, "error");
+            swal("Error🤖", errorsTemplate, "error");
         } else {
             productosListar();
             const btn = document.querySelector('#btnCancelarAdd');
@@ -161,12 +161,12 @@ const editarProducto = async (id) => {
                 let result = await response.json();
 
                 if (Object.keys(result)[0] == 'error') {
-                    ("Ouch", result.error, "error")
+                    swal("Ouch", result.error, "error")
                 } else if (Object.keys(result)[0] == 'errors') {
                     let errorsTemplate = result.errors.map(e => {
                         return `  ${e.value} --> ${e.msg}  `
                     }).join('||');
-                    ("Ouch!", errorsTemplate, error);
+                    swal("Ouch!", errorsTemplate, error);
                 } else {
                     await productosListar();
                     const btn = document.querySelector('#btnCancelarEdit');
@@ -201,7 +201,7 @@ const eliminarProducto = async (id) => {
         if (Object.keys(data)[0] != 'error') {
             await productosListar();
         } else {
-            (data.error, data.descripcion, "error");
+            swal(data.error, data.descripcion, "error");
         }
     } catch (error) {
         console.log(error);

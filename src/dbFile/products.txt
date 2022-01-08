@@ -41,13 +41,13 @@
 	},
 	{
 		"id": "f8b2ce37-ade7-4ba1-bfc3-4e5646c334cf",
-		"timestamp": "3/1/2022 22:43:49",
+		"timestamp": "8/1/2022 20:02:25",
 		"nombre": "THE CHILD",
 		"descripcion": "Funko Pop - Figura Vinilo. Series/Mandalorian",
 		"codigo": "0123",
 		"foto": "https://app.pardux.com/render/img-jpg/58/aliennex-ecuador/funko-pop-the-child-with-cup-baby-yoda-378-star-wars-the-mandalorian",
 		"precio": "4490",
-		"stock": "2"
+		"stock": "1"
 	},
 	{
 		"id": "b83ea4c2-0726-4afb-a9e4-d137a90aa511",
@@ -58,5 +58,15 @@
 		"foto": "https://app.pardux.com/render/img-jpeg/58/aliennex-ecuador/bill-ciphe-61b2602f82887",
 		"precio": "3980",
 		"stock": "2"
+	},
+	{
+		"id": "d3794aa4-5ee5-4008-a80e-8bf6444424b5",
+		"timestamp": "8/1/2022 20:02:06",
+		"nombre": "WANDA",
+		"descripcion": "Funko Pop - Figura Vinilo. Series/Wanda-Vision",
+		"codigo": "1426",
+		"foto": "https://app.pardux.com/render/img-jpg/58/aliennex-ecuador/funko-pop-scarlet-witch-828-wandavision",
+		"precio": "3800",
+		"stock": "6"
 	}
 ]
