@@ -1,0 +1,62 @@
+[
+	{
+		"id": "d57337ee-4af7-4e0d-bd61-280ec77d1ece",
+		"timestamp": "3/1/2022 22:41:11",
+		"nombre": "HARRY",
+		"descripcion": "Funko Pop - Figura vínilo. Películas/Harry Potter",
+		"codigo": "0001",
+		"foto": "https://app.pardux.com/render/img-jpg/58/aliennex-ecuador/funko-pop-harry-potter-118-harry-potter",
+		"precio": "4290",
+		"stock": "3"
+	},
+	{
+		"id": "9e63cee6-6399-4cfe-a542-ad46b415f148",
+		"timestamp": "3/1/2022 22:37:57",
+		"nombre": "HARRY",
+		"descripcion": "Funko Pop - Figura Vinilo. Películas/Harry Potter",
+		"codigo": "0004",
+		"foto": "https://app.pardux.com/render/img-jpg/58/aliennex-ecuador/funko-pop-harry-potter-42",
+		"precio": "4900",
+		"stock": "4"
+	},
+	{
+		"id": "27448b6b-faeb-4b91-ab57-c1787312b894",
+		"timestamp": "3/1/2022 22:40:00",
+		"nombre": "MARTY",
+		"descripcion": "Funko Pop - Figura vinilo. Peliculas/Volver al futuro",
+		"codigo": "0008",
+		"foto": "https://app.pardux.com/render/img-jpg/58/aliennex-ecuador/funko-pop-marty-in-puffy-vest-961-back-to-the-future",
+		"precio": "4000",
+		"stock": "3"
+	},
+	{
+		"id": "2ccfcc6e-3bfa-4771-8677-3a505302729e",
+		"timestamp": "3/1/2022 22:41:27",
+		"nombre": "MARTY",
+		"descripcion": "Funko Pop - Figura vinilo. Peliculas/Volver al futuro",
+		"codigo": "0012",
+		"foto": "https://app.pardux.com/render/img-jpg/58/aliennex-ecuador/funko-pop-marty-mcfly-future-outfit-962-back-to-the-future",
+		"precio": "4290",
+		"stock": "1"
+	},
+	{
+		"id": "f8b2ce37-ade7-4ba1-bfc3-4e5646c334cf",
+		"timestamp": "3/1/2022 22:43:49",
+		"nombre": "THE CHILD",
+		"descripcion": "Funko Pop - Figura Vinilo. Series/Mandalorian",
+		"codigo": "0123",
+		"foto": "https://app.pardux.com/render/img-jpg/58/aliennex-ecuador/funko-pop-the-child-with-cup-baby-yoda-378-star-wars-the-mandalorian",
+		"precio": "4490",
+		"stock": "2"
+	},
+	{
+		"id": "b83ea4c2-0726-4afb-a9e4-d137a90aa511",
+		"timestamp": "3/1/2022 22:50:25",
+		"nombre": "BILL",
+		"descripcion": "Funko Pop - Figura vinilo. Series/Gravity Falls",
+		"codigo": "1088",
+		"foto": "https://app.pardux.com/render/img-jpeg/58/aliennex-ecuador/bill-ciphe-61b2602f82887",
+		"precio": "3980",
+		"stock": "2"
+	}
+]

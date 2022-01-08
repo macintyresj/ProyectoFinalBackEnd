@@ -1,0 +1,50 @@
+[
+	{
+		"id": "a717f098-38f7-474d-8360-37528292cf79",
+		"timestamp": "4/1/2022 09:46:40",
+		"producto": {
+			"id": "d57337ee-4af7-4e0d-bd61-280ec77d1ece",
+			"timestamp": "3/1/2022 22:41:11",
+			"nombre": "HARRY",
+			"descripcion": "Funko Pop - Figura vínilo. Películas/Harry Potter",
+			"codigo": "0001",
+			"foto": "https://app.pardux.com/render/img-jpg/58/aliennex-ecuador/funko-pop-harry-potter-118-harry-potter",
+			"precio": "4290",
+			"stock": "3"
+		},
+		"cantidad": 1,
+		"client_id": "678a6da5-b4ec-416d-9af7-67f7673b2261"
+	},
+	{
+		"id": "aa8fbff5-081c-4852-be82-e740548973a4",
+		"timestamp": "4/1/2022 19:26:46",
+		"producto": {
+			"id": "27448b6b-faeb-4b91-ab57-c1787312b894",
+			"timestamp": "3/1/2022 22:40:00",
+			"nombre": "MARTY",
+			"descripcion": "Funko Pop - Figura vinilo. Peliculas/Volver al futuro",
+			"codigo": "0008",
+			"foto": "https://app.pardux.com/render/img-jpg/58/aliennex-ecuador/funko-pop-marty-in-puffy-vest-961-back-to-the-future",
+			"precio": "4000",
+			"stock": "3"
+		},
+		"cantidad": 1,
+		"client_id": "61d1b9f1bf35572c282262da"
+	},
+	{
+		"id": "6fe5ee91-911c-437b-8108-01b8e98ae5d6",
+		"timestamp": "4/1/2022 19:26:49",
+		"producto": {
+			"id": "9e63cee6-6399-4cfe-a542-ad46b415f148",
+			"timestamp": "3/1/2022 22:37:57",
+			"nombre": "HARRY",
+			"descripcion": "Funko Pop - Figura Vinilo. Películas/Harry Potter",
+			"codigo": "0004",
+			"foto": "https://app.pardux.com/render/img-jpg/58/aliennex-ecuador/funko-pop-harry-potter-42",
+			"precio": "4900",
+			"stock": "4"
+		},
+		"cantidad": 1,
+		"client_id": "61d1b9f1bf35572c282262da"
+	}
+]

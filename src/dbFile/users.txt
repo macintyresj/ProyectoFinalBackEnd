@@ -1,0 +1,12 @@
+[
+	{
+		"email": "nombre1@mail.com",
+		"password": "$2b$10$SuEegc3PrtI2ID14qNghVeZui4heX2aw2rErPtS.Np8At6pq/vUWe",
+		"nombre": "nombre1",
+		"direccion": "direccion1",
+		"edad": "33",
+		"telefono": "+5411111111",
+		"foto": "1641260054982_1640950852582_avatar.png",
+		"id": "678a6da5-b4ec-416d-9af7-67f7673b2261"
+	}
+]

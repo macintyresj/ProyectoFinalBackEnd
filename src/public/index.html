@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+
+    
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-4"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-list-4">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">TIENDA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/chat">CHAT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="carrito.html">CARRITO</a>
+                    </li>
+                    <li id="user" class="nav-item dropdown">+</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5 min-vh-100">
+        <button type="button" class="btn btn-add float-right" data-toggle="modal" data-target="#modalAddProduct">
+            Agregar producto
+        </button>
+
+
+        <h1>TIENDA</h1>
+
+        <!-- Form busqueda productos -->
+        <form id="formSearch" class="mt-4">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="optionsSearch">Filtrar por:</label>
+                </div>
+                <select class="custom-select" name="optionsSearch" id="optionsSearch">
+                    <option selected>Seleccionar</option>
+                    <option value="1">Nombre</option>
+                    <option value="2">Código</option>
+                    <option value="3">Precio</option>
+                    <option value="4">Stock</option>
+
+                </select>
+            </div>
+            <div class="row g-3">
+                <div style="display: none;" class="col-6" id="buscarPorNombre">
+                    <input class="form-control form-control-sm" id="inputSearchNombre" type="text"
+                        name="inputSearchNombre" placeholder="Aquí el nombre del producto a buscar...">
+                </div>
+                <div style="display: none;" class="col-6" id="buscarPorCodigo">
+                    <input class="form-control form-control-sm" id="inputSearchCodigo" type="text"
+                        name="inputSearchCodigo" placeholder="Aquí el código del producto a buscar...">
+                </div>
+               
+                <div style="display: none;" class="col-6" id="buscarPorPrecio">
+                    <input class="form-control form-control-sm" id="inputSearchPrecioMin" type="number" step="0.01"
+                        name="inputSearchPrecioMin" placeholder="Precio desde">
+
+                    <input class="form-control form-control-sm" id="inputSearchPrecioMax" type="number" step="0.01"
+                        name="inputSearchPrecioMax" placeholder="Precio hasta">
+                </div>
+                <div style="display: none;" class="col-6" id="buscarPorStock">
+                    <input class="form-control form-control-sm" id="inputSearchStockMin" type="number"
+                        name="inputSearchStockMin" placeholder="Stock desde">
+                    <input class="form-control form-control-sm" id="inputSearchStockMax" type="number"
+                        name="inputSearchStockMax" placeholder="Stock hasta">
+                </div>
+                <div style="display: none;" class="col-6" id="formSearchBtns">
+                    <button type="submit" class="btn btn-sm btn-add">Buscar</button>
+                    <button type="reset" class="btn btn-sm btn-cancel" onclick="limpiarFiltros()">Limpiar
+                        filtros</button>
+                </div>
+            </div>
+
+        </form>
+
+        <!-- Modal Agregar producto -->
+        <div class="modal fade modal-borde" id="modalAddProduct" tabindex="-1" role="dialog" aria-labelledby="modalAddProductLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalAddProductLabel">Agregá tu nuevo producto</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="formAddProduct" autocomplete="off">
+                            <div class="row g-3 mb-4">
+                                <div class="col-2">
+                                    <label class="form-label" for="codigo">Código</label>
+                                    <input class="form-control form-control-sm" id="codigo" type="text" name="codigo"
+                                        required>
+                                </div>
+                                <div class="col-4">
+                                    <label class="form-label" for="nombre">Nombre</label>
+                                    <input class="form-control form-control-sm" id="nombre" type="text" name="nombre"
+                                        required>
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label" for="descripcion">Descripción</label>
+                                    <input class="form-control form-control-sm" id="descripcion" type="text"
+                                        name="descripcion">
+                                </div>
+                            </div>
+                            <div class="row g-3 mb-4">
+                                <div class="col-6">
+                                    <label class="form-label" for="precio">Precio</label>
+                                    <input class="form-control form-control-sm" id="precio" type="number" step="0.01"
+                                        name="precio" required>
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label" for="stock">Stock</label>
+                                    <input class="form-control form-control-sm" id="stock" type="number" step="0.01"
+                                        name="stock">
+                                </div>
+                            </div>
+                            <div class="row g-3 mb-4">
+                                <div class="col-12">
+                                    <label class="form-label" for="foto">Imagen (url)</label>
+                                    <input class="form-control form-control-sm" id="foto" type="text" name="foto">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-save">Guardar</button>
+                            <button id="btnCancelarAdd" type="button" class="btn btn-cancel"
+                                data-dismiss="modal">Cancelar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Editar producto -->
+        <div class="modal fade" id="modalEditProduct" tabindex="-1" role="dialog"
+            aria-labelledby="modalEditProductLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalEditProductLabel">Editar producto</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="formEditProduct" autocomplete="off">
+                            <div class="row g-3 mb-4">
+                                <div class="col-2">
+                                    <label class="form-label">Código</label>
+                                    <input class="form-control form-control-sm" id="edit_codigo" type="text"
+                                        name="codigo" required>
+                                </div>
+                                <div class="col-4">
+                                    <label class="form-label">Nombre</label>
+                                    <input class="form-control form-control-sm" id="edit_nombre" type="text"
+                                        name="nombre" required>
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label">Descripción</label>
+                                    <input class="form-control form-control-sm" id="edit_descripcion" type="text"
+                                        name="descripcion">
+                                </div>
+                            </div>
+                            <div class="row g-3 mb-4">
+                                <div class="col-6">
+                                    <label class="form-label">Precio</label>
+                                    <input class="form-control form-control-sm" id="edit_precio" type="number"
+                                        step="0.01" name="precio" required>
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label">Stock</label>
+                                    <input class="form-control form-control-sm" id="edit_stock" type="number"
+                                        step="0.01" name="stock">
+                                </div>
+                            </div>
+                            <div class="row g-3 mb-4">
+                                <div class="col-12">
+                                    <label class="form-label">Imagen (url)</label>
+                                    <input class="form-control form-control-sm" id="edit_foto" type="text" name="foto">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-save">Guardar</button>
+                            <button id="btnCancelarEdit" type="button" class="btn btn-cancel"
+                                data-dismiss="modal">Cancelar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lista de productos -->
+        <h2 class="mt-4">COLECCIONABLES</h2>
+        <div id="app" class="row row-cols-1 row-cols-md-3 g-4 mb-4"></div>
+
+    </div>
+
+
+    <script src="/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // obtener userAuth
+        (async () => {
+            const response = await fetch('/getUser', {
+                headers: {
+                    'Authorization': localStorage.getItem('token')
+                }
+            });
+
+            const data = await response.json();
+            if (Object.keys(data)[0] != 'error') {
+                let fotoUrl = data.foto == null
+                    ? 'https://via.placeholder.com/150x150?text=noImage'
+                    : '/assets/' + data.foto;
+                document.getElementById('user').innerHTML = `
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="${fotoUrl}"
+                            width="40" height="40" class="rounded-circle">
+                    </a>
+                    <div style="right: 10px; width: auto;" class="dropdown-menu text-end" aria-labelledby="navbarDropdownMenuLink">
+                        <div class="d-flex flex-column justify-content-end dropdown-item">
+                            <small>${data.email}</small>
+                            <small>${data.nombre}</small>
+                            <small>${data.telefono} - ${data.direccion}</small>
+                        </div>
+                        <hr class="dropdown-divider">
+                        <a class="dropdown-item" href="ordenes.html">Mis ordenes</a>
+                        <hr class="dropdown-divider">
+                        <a class="dropdown-item" href="#" onclick="logout()">Log Out</a>
+                    </div>
+                `
+            } else {
+                document.getElementById('user').innerHTML = `
+            <form class="form-inline">
+                <a class="btn btn-light" href="login.html">Iniciar sesión</a>
+                <a class="btn btn-add" href="signup.html">Registrarse</a>
+            </form>
+            `
+            }
+        })();
+
+        function logout() {
+            localStorage.clear()
+            window.location.replace('/')
+        }
+
+    </script>
+
+</body>
+
+</html>
