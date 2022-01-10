@@ -201,7 +201,7 @@ const eliminarProducto = async (id) => {
         if (Object.keys(data)[0] != 'error') {
             await productosListar();
         } else {
-            swal(data.error, data.descripcion, "error");
+            swal("Ouch", "Debes iniciar sesion", "error");
         }
     } catch (error) {
         console.log(error);

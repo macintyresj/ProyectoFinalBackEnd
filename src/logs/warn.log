@@ -2,3 +2,4 @@
 [2022-01-08T20:00:00.576] [WARN] warn - Este usuario no existe!
 [2022-01-08T20:00:18.296] [WARN] warn - Este usuario no existe!
 [2022-01-08T20:00:29.890] [WARN] warn - Contraseña incorrecto!
+[2022-01-10T08:31:50.760] [WARN] warn - Ruta /login método GET no implementada
